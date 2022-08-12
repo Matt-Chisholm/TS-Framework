@@ -157,6 +157,10 @@ var user = new User_1.User({
   name: 'Matt',
   age: 28
 });
+user.set({
+  name: 'Sam',
+  age: 24
+});
 console.log(user.get('name'));
 console.log(user.get('age'));
 },{"./models/User":"src/models/User.ts"}],"../../AppData/Roaming/nvm/v14.19.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
