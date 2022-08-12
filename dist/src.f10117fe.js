@@ -130,6 +130,7 @@ var User =
 function () {
   function User(data) {
     this.data = data;
+    this.events = {};
   }
 
   User.prototype.get = function (propName) {
@@ -140,7 +141,11 @@ function () {
     Object.assign(this.data, update);
   };
 
-  User.prototype.on = function (eventName, callback) {};
+  User.prototype.on = function (eventName, callback) {
+    var handlers = this.events[eventName] || [];
+    handlers.push(callback);
+    this.events[eventName] = handlers;
+  };
 
   return User;
 }();
