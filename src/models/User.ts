@@ -35,4 +35,8 @@ export class User {
             callback();
         });
     }
+
+    fetch(): void {
+
+    }
 }
