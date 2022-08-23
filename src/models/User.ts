@@ -39,7 +39,7 @@ export class User {
     }
 
     fetch(): void {
-        axios.get(`http://localhost:3000/users${this.get('id')}`)
+        axios.get(`http://localhost:3000/users/${this.get('id')}`)
         .then((response: AxiosResponse): void => {
             this.set(response.data);
         })
