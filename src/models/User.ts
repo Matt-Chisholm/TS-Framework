@@ -44,4 +44,8 @@ export class User {
             this.set(response.data);
         })
     }
+
+    save(): void {
+        
+    }
 }
