@@ -1,14 +1,22 @@
 {
   "users": [
     {
-      "name": "Matt",
-      "age": 28,
       "id": 1
     },
     {
       "name": "Matt",
       "age": 28,
       "id": 2
+    },
+    {
+      "name": "NEW NAME",
+      "age": 20,
+      "id": 3
+    },
+    {
+      "name": "NEW NAME",
+      "age": 20,
+      "id": 4
     }
   ]
 }
