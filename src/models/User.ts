@@ -8,7 +8,7 @@ interface UserProps {
 
 export class User {
 
-    constructor(private data: UserProps) {}
+    constructor(private data: UserProps) { }
 
     get(propName: string): (number | string) {
         return this.data[propName];
@@ -20,9 +20,9 @@ export class User {
 
     fetch(): void {
         axios.get(`http://localhost:3000/users/${this.get('id')}`)
-        .then((response: AxiosResponse): void => {
-            this.set(response.data);
-        })
+            .then((response: AxiosResponse): void => {
+                this.set(response.data);
+            })
     }
 
     save(): void {
