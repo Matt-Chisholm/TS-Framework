@@ -16,9 +16,9 @@ export class Sync {
         const id = this.get('id');
 
         if (id) {
-            axios.put(`http://localhost:3000/users/${id}`, this.data);
+            axios.put(`${this.rootUrl}/${id}`, this.data);
         } else {
-            axios.post('http://localhost:3000/users', this.data);
+            axios.post(this.rootUrl, this.data);
         }
     }
 
